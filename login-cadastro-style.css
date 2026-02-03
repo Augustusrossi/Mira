@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('Fontes/OpenSans-VariableFont_wdth\,wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: bold;
+  } 
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  auto;
+    gap: .5rem;
+    grid-auto-flow: dense;
+}
+
+body{
+    background-color: var(--primary-color);
+    height: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+	background-repeat: no-repeat;
+    background-image: 
+        radial-gradient(circle at left top, rgba(71, 187, 212, 0.4), transparent 400px),
+        radial-gradient(circle at right 50%, rgba(71, 187, 212, 0.4), transparent 300px);
+
+}
+
+
+.header .header-principal-nav  .header-principal-nav-auxiliar{
+    justify-content: end;
+    
+}
+
+
+
+/* .header .header-principal-nav-buttons .button-menu{
+    height:  2.5625em;
+    padding: 0 1.875em 0 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.header .header-principal-nav-buttons {
+    padding: 0;
+    margin: 0;
+} */
+
+/* .main-login{
+    margin-top: 4.6875em;
+} */
+
+.main-login{
+    grid-template-columns: 1 /-1;
+    height: auto;
+    max-height: 31.25em;
+    margin-bottom: 0 ;
+    
+    min-height: 31.25em ;
+    
+}
+
+.row > .form-tudo{
+    padding: 0;
+    overflow: hidden;
+    grid-column: 4 / -4;
+    border: none;
+    border-radius: 0 10px 10px 0; /* Arredondamento apenas na parte inferior */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+
+}
+
+.form-tudo .divs-forms{
+    background-color: var(--terciary-color);
+    text-align: center;
+    color: var(--primary-color);
+    padding: 2em 0;
+    
+}
+
+.divs-forms button{
+    border-radius: 5px;
+    padding: .5em 3em;
+}
+
+.div-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+.div-esquerda img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.div-direita {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.div-direita .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    height: 100%;
+}
+
+.div-direita .form .formInputs{
+    width: 80%;
+    padding: 1em 0;
+}
+
+.div-direita{
+    gap: 1em;
+}
+.form-tudo .divs-forms .form-cadastro{
+    gap: 0;
+}
+
+.form .formInputs input:not(:last-child){
+    margin-bottom: 1em;
+}
+
+.form button{
+    margin-top: 2em;
+}
+
+
+
+
+
+label, input:not([type="checkbox"]){
+    width: 100%;
+}
+
+
+
+
+
+#esqueceuId{
+    text-decoration: none;
+    color: black;
+    margin-top: 1%;
+}
+
+
+h2{
+    letter-spacing: .1em;
+    font-family:'MinhaFonte';
+}
+
+input{
+    padding: 8px;
+}
+
+
+
+
+.header-principal-nav-buttons .button-menu{
+
+    color: var(--terciary-color);
+    cursor: pointer;
+
+}
+
+.header .header-principal-nav{
+    margin: 0;
+    top: 0;
+    display: block;
+    position: fixed;
+    box-shadow: none;
+    width: 100%;
+    backdrop-filter: blur(0px);
+    z-index: 10;
+    background-color: transparent;
+}
+
+body .footer{
+	height: calc(100% - 16rem);
+    background-color: transparent;    
+    
+}
+
+
+
+
+
+@media screen and (max-width: 45.625em) {
+
+    body{
+        height: auto;
+    }
+
+    .row > .form-tudo{
+        height: 100%;
+        grid-template-columns: 1fr;
+        
+    }
+
+    
+}

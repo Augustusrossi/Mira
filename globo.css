@@ -1,0 +1,170 @@
+
+
+
+.main-globo {
+    margin-top: 6.5625em;
+    padding: 0;
+}
+
+.main .contents{
+    margin: 0 2em;
+}
+
+
+.row > .text-intro{
+    grid-column: 2/-2;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.canvas-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 2em;
+    margin:0  auto;
+    /* Centraliza */
+    display: flex;
+    align-items: center;
+    /* Opcional: para visualização */
+}
+
+#meuCanvas {
+    background-color: var(--opacity-secondary-color);
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+/* ------------------- */
+
+
+.interacao-globo .button-globo{
+    border-radius: .3em;
+    font-size: 1.2em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+ 
+.texts-and-globo .texts {
+    margin: 2em auto;
+    width: 100%;
+    padding: 0 15%;
+    text-align: justify;
+}
+.texts-and-globo .texts h2,
+.texts-and-globo .texts h3{
+    margin-top: 2em;
+}
+
+.texts-and-globo .texts p{
+    margin: 0;
+    text-indent: 3em;
+}
+
+.list-globo-text{
+    margin-top: 1em;
+    padding-left: 1.5em;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+.texts .button-globo-interacao{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+}
+
+.texts-oceanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.row > .interacao-globo{
+    grid-column: 1/-1;
+}
+
+.texts-and-globo{
+    grid-gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.texts-and-globo:has(.div-disabled-js){
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.div-disabled-js{
+    display: none;
+}
+
+
+
+/* Interação dos botões com os textos */
+.text-closed {
+    display: none;    
+    
+}
+
+@media screen and (max-width: 45.625em) {
+
+    .buttons-nav-globo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1.5em ;
+        gap: 1em;
+    }
+
+    .interacao-globo .button-globo{
+        width: 60%;
+    }
+
+    .texts-and-globo .texts {
+        padding: 0 1%;
+    }
+
+}
+
+
+@media screen and (min-width: 45.625em) {
+
+    .buttons-nav-globo {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1.5em ;
+        gap: 1.5em;
+    }
+
+    .texts .button-globo-interacao{
+        margin-top: 3em;
+        width: 20%;
+    }
+
+}
+
+
+
+
+/* @media screen and (min-width: 90.875em) {
+
+     .buttons-nav-globo {
+        background-color: red;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1.5em ;
+        gap: 1em;
+    }
+} */

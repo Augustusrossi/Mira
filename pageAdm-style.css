@@ -1,0 +1,161 @@
+.main-pub{
+	height: calc(100vh - 4.6875em - 3.75em - 12rem);
+}
+
+
+
+
+.row > .form-tudo{
+    padding: 0;
+    overflow: hidden;
+    grid-column: 3 / -3;
+    border: none;
+    border-radius: 30px 0 30px 0; /* Arredondamento apenas na parte inferior */
+    text-align: center;
+    box-shadow: 1px 1px 5px 0.1px var(--primary-color);
+}
+
+body .row > .form-post{
+    grid-column: 4 / -4;
+	height: calc(100vh - 4.6875em - 3.75em - 12rem);
+}
+
+
+.form-tudo .divs-forms{
+	background-color: var(--secondary-color);
+    background-image: 
+        radial-gradient(circle at left top, var(--primary-color), transparent 600px),
+        radial-gradient(circle at right 95%, var(--opacity-primary-color), transparent 400px);
+
+    text-align: center;
+    color: var(--primary-color);
+    padding: 2em;
+    margin: 0;
+}
+
+.form-post .divs-forms{
+	height: 100%;
+	margin: auto 0;
+	
+}
+
+
+.divs-forms h1,
+.divs-forms h2{
+    color: var(--terciary-color);
+}
+
+.divs-forms h2{
+    margin-top: 2em;
+}
+
+
+.divs-forms .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    height: 100%;
+}
+
+.form-post .divs-forms .form-publi{
+	justify-content: space-evenly;
+}
+
+
+
+.form .formInputs{
+	width: 100%;
+	max-width: 100%;
+	border-radius: .8em;
+    outline: none;
+    border: none;
+    padding: .7em 1em;
+    color: var(--primary-color);
+}
+
+
+.formInputs option {
+    padding-left: 0;
+}
+
+
+
+.form .formInputs:hover,
+.form .formInputs:focus{
+    box-shadow: 0 0 10px var(--terciary-color);
+    transition: .3s;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: var(--opacity-terciary-color); 
+}
+
+
+
+.form .formInputs input:not(:last-child){
+    margin-bottom: 1em;
+}
+
+.form input[type="submit"],
+.form button[type="submit"]{
+    margin-top: 2em;
+    width: 100%;
+    border-radius: .8em;
+    padding: .7em 3em;
+}
+
+.form input[type="submit"]:hover,
+.form input[type="submit"]:focus{
+    box-shadow: 0 0 10px var(--terciary-color);
+}
+
+
+
+
+
+label, input:not([type="checkbox"]){
+    width: 100%;
+}
+
+
+
+
+
+#esqueceuId{
+    text-decoration: none;
+    color: black;
+    margin-top: 1%;
+}
+
+
+h2{
+    letter-spacing: .1em;
+    font-family:'MinhaFonte';
+}
+
+.footer{
+	
+}
+
+
+
+
+@media screen and (max-width: 45.625em) {
+
+    body{
+        height: auto;
+    }
+
+    .divs-forms .form {
+        width: 100%;
+    }
+
+    .form input[type="submit"]{
+        margin-top: 2em;
+        width: 100%;
+        border-radius: .8em;
+        padding: .7em 0em;
+    }
+
+}

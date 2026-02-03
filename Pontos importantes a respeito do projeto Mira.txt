@@ -1,0 +1,15 @@
+Vale ressaltar alguns pontos sobre o projeto Mira.
+
+1- É um projeto escolar de conclusão do curso Técnico em Informática e foi usado da arquitetura Maven Project para organização do projeto, portanto, é necessário realizar configurações do maven para inicializar o projeto.
+
+2- Ele foi um projeto realizado em grupo, devido a isso, os seguintes membros também merecem o crédito:
+- Lucas Resende: lucasresende9412@gmail.com
+- Abner Dutra: abner0135@gmail.com
+- Gleicielly Aparecida: gleicie.ars@gmail.com
+- Emilly Vitória: vitoriaemillysoares015@gmail.com
+
+3- Além das configurações do maven também são necessárias configurações referentes ao banco de dados, no nosso projeto foi usado um servidor local e uso do banco de dados MySql.
+
+3- Dentro do repositório, Mira, está apenas os arquivos de programação da parte frontend e da parte backend, ou seja, estão arquivos .jsp, .java, .css e .js. Imagens e outras pastas que vêm junto com a configuração do maven no software, Eclipse, foram deixadas de lado, porém também estará incluso no repositório o artigo científico escrito a respeito do projeto e das suas etapas de construção.
+
+Para mais informações entrar em contato com algum dos emails ou com o dono do repositório, Augustus Rossi, augustusrossi14@gmail.com.

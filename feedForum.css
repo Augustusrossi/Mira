@@ -1,0 +1,405 @@
+.main{
+    margin-top: 3em;
+}
+
+.main p{
+	text-indent: 0;
+}
+
+.feedSoccial {
+    border-radius: 2em;
+    padding: 32px 24px;
+    grid-column: 4 /-4;
+    width:100%;
+    margin: 32px auto;
+}
+
+.feedSoccial-titulo h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 2rem;
+    color: #1a355d;
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+
+.feedSoccial-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.feedSoccial-nav .btn-clicado{
+	background-color: var(--opacity-primary-color);
+	
+	
+}
+
+.feedSoccial-nav .full-button{
+    border-radius: 8px;
+    padding: .7em 1.5em;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.feedSoccial-postagens {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; max-width: 70%;
+    margin: 0 auto;
+}
+
+.postagem {
+    background-color: var(--opacity-secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px var(--opacity-primary-color);
+    padding: 1.7em;
+   
+}
+
+.postagem-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.postagem-usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.postagem-usuario-foto {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);;
+}
+
+.postagem-usuario-nome {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.postagem-cabecalho a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.postagem-cabecalho a:hover,
+.postagem-cabecalho a:focus{
+    opacity: .7;
+    transition: .3s;
+    outline: none;
+}
+
+
+
+.postagem-conteudo div{
+    width: 100%;
+    height: 100%;
+	max-height: 400px;
+	margin-top: 8px;
+	
+}
+.postagem-imagem {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit:cover;
+    border-radius: 8px;
+}
+
+.postagem-conteudo p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    display: block
+}
+
+
+
+.postagem-interacoes {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.postagem-interacoes button {
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: var(--terciary-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+}
+
+.postagem-interacoes button:hover,
+.postagem-interacoes button:focus {
+    background: var(--opacity-primary-color);
+}
+
+.postagem-interacoes button:hover,
+.postagem-interacoes button:focus {
+    background: var(--opacity-secondary-color);
+    color: var(--secondary-color);
+}
+
+
+/* PERFIL */
+
+.main hr{
+    margin: 1em 0;
+    background-image: linear-gradient(to right, var(--terciary-color), var(--primary-color), var(--terciary-color), var(--primary-color), var(--terciary-color));
+    border: none;
+    height: 2px;
+    grid-column: 1 / -1;
+}
+
+.main hr::after{
+    font-size: 1.5em;
+    content: '⊱  ⊰';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    padding: 1rem;
+    background-color: transparent;
+} 
+
+
+.perfilUser-postagens{
+    display: block;
+    box-sizing: border-box;
+    grid-column: 2 /-2;
+    margin-top: 3em;
+    
+}
+
+.perfilUser-postagens .feedSoccial-postagens-perfil{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.feedSoccial-postagens-perfil .postagem{	
+	height: 100%;
+	max-width: 40rem;
+	max-height: 40rem;
+}
+
+.feedSoccial-postagens-perfil .postagem-conteudo img{	
+	width:100%;
+	height:320px;
+	object-fit: cover
+}
+
+
+.perfilUser-cabecalho{
+    height: 100%;
+    grid-column: 1 / -1 ;
+}
+.perfil-cabecalho{
+    padding: 2em 3.5em;
+
+}
+
+.perfil-usuario-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+.perfil-usuario-foto {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .2em solid var(--primary-color);
+    padding: .3em;
+}
+
+.nomes-user{
+    display: block;
+}
+
+.bold-text{
+    display: block;
+    font-size: 1.5em;
+    font-weight: 600;   
+}
+
+.fine-text{
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.infos-user{
+    padding: 2em 0em 2em 3.5em;
+    margin-left: 1em;
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.infos-user .numero-user{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.numero-user .numero-text{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.numero-user .numero-text *{
+    display: block;
+}
+
+
+@media screen and (max-width: 22.5em) {
+
+    .feedSoccial-nav .full-button{
+        border-radius: 8px;
+        padding: .2em .5em;
+        font-size: .5rem;
+    }
+
+    .perfil-usuario-info {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .perfil-usuario-info .infos-user{
+        padding: 1em 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .numero-user{
+        flex-direction: column;
+        gap: 1em;
+        width: auto;
+        
+    }
+
+    .numero-user .numero-text{
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and 	(max-width: 45em) {
+
+    /* FEED */
+
+    .feedSoccial {
+        padding: 16px 4px;
+        grid-column: 2 /-2;
+
+    }
+
+    .postagem {
+        padding: 12px;
+    }
+    .feedSoccial-titulo h2 {
+        font-size: 1.3rem;
+    }
+
+    .feedSoccial-nav .full-button{
+        border-radius: 8px;
+        padding: .5em 1em;
+        font-size: 1.2rem;
+    }
+
+    /* PERFIL */
+
+    .perfil-cabecalho{
+        padding: 1em 1.5em;
+
+    }
+
+    .perfil-usuario-foto {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: .2em solid var(--primary-color);
+        padding: .3em;
+    }
+
+    .infos-user{
+        width: auto;
+        padding: 2em 0;
+        margin-left: 2em;
+        color: var(--primary-color);
+    }
+    
+    .numero-user{
+        flex-direction: column;
+    }
+
+    .numero-user .numero-text{
+        width: 100%;
+    }
+
+    .perfilUser-postagens .feedSoccial-postagens-perfil{
+	    grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 90.875em) and (min-width: 45em){
+    /* FEED */
+
+    .feedSoccial {
+        padding: 16px 4px;
+        grid-column: 3 /-3;
+
+    }
+
+    .postagem {
+        padding: 12px;
+    }
+    .feedSoccial-titulo h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* PERFIL  */
+    .perfilUser-postagens .feedSoccial-postagens-perfil{
+	    grid-template-columns: repeat(2, 1fr);
+	}
+
+
+}
+
+@media screen and (min-width: 112.5em){
+
+	.feedSoccial-postagens-perfil .postagem{	
+		height: 100%;
+		max-width: 40rem;
+		max-height: 60rem;
+	}
+	
+	.feedSoccial-postagens-perfil .postagem-conteudo img{	
+		width:100%;
+		height: 100%;
+		object-fit: cover
+	}
+	
+	
+}

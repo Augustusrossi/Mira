@@ -1,0 +1,154 @@
+.main h2{
+    grid-column: 1 / -1;
+} 
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  auto;
+    gap: .5rem;
+    grid-auto-flow: dense;
+}
+/* 
+.main .content{
+    margin: 0 auto;
+    padding:  1.5em 3em;
+} */
+.content{
+    grid-column: 2 / -2;
+    position: relative;
+    display: block;
+    border-radius: 10px ;
+    background-color: var(--opacity-secondary-color);
+}
+
+.content{
+    display: block;
+    background-color: var(--opacity-secondary-color);
+    position: relative;
+    padding:  1.5em 3em;
+    grid-column: 2 / -2;
+
+}
+
+.btnCarrossel {
+    position: absolute;
+    background-color: var(--opacity-primary-color);
+    outline: none;
+    border: none;
+    color: var(--terciary-color);
+    height: 100%;
+}
+.btnCarrossel:first-child{
+    left: 0;
+    border-radius: 10px 0 0 10px;
+}
+.btnCarrossel:last-child{
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.btnCarrossel:hover,
+.btnCarrossel:focus{
+    transition: .2s;
+    opacity: .7;  
+}
+
+
+.main .ongs-carrossel{
+    padding: 0 3em;
+    height: 100%;
+} 
+
+.ongs-carrossel .container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.carrossel-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.2s; 
+    position: absolute;
+    pointer-events: none;
+    padding: 2em 0;
+    grid-gap: 2em;
+}
+
+.carrossel-item.on{
+    pointer-events: auto;
+    position: relative;
+    opacity: 1;
+}
+
+
+.carrossel-item .info-ong .img-ong img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.carrossel-item .mapa-ong {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.carrossel-item .mapa-ong iframe {
+    height: 100%;  
+    margin: 0 auto;
+    border-radius: 2em;
+    width: 100%;
+    display: block;
+}
+
+
+@media screen and (max-width: 45.625em) {
+
+    .carrossel-item{
+        grid-template-columns: 1fr;
+        padding: 2em 0 calc(2em + 5%) 0;
+    }
+
+    .btnCarrossel {
+        height: 5%;
+        width: 45%;
+    }
+
+    .btnCarrossel:first-child{
+        bottom: 0;
+    }
+    .btnCarrossel:last-child{
+        top: 95%;        
+        right: 0;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+/* 
+@media screen and (max-width: 90.875em) {
+
+}
+ */
+
+
+
+/* @media screen and (min-width: 90.875em) {
+
+     .buttons-nav-globo {
+        background-color: red;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1.5em ;
+        gap: 1em;
+    }
+} *

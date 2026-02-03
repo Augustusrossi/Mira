@@ -1,0 +1,286 @@
+/* Cabeçalho */
+
+
+/* header sections  */
+    
+.header-section{
+    margin-top: calc(4.68em + 1.875em);
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+    height: calc(100vh - 6.5625em);
+
+}
+
+.row > .header-section-first{
+    grid-column: 1 / 6 ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+
+}
+
+.row > .header-section-second{
+    grid-column: 7 / -1 ;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-section-second .formas{
+    width: 20%;
+    height: 100%;
+    transform: skew(-10deg);
+    background-image: url(../imagens/imagem-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-section-second .paralelograma-1{
+	background-position: 35%;
+	
+}
+
+.header-section-second .paralelograma-2{
+	background-position: 65%;
+	
+}
+
+.header-section-second .paralelograma-3{
+	background-position: 100%;
+	
+}
+
+
+.header-section .header-section-title{
+    margin-top: 0;
+    font-family:'MinhaFonte';
+}
+
+.paragraph-text{
+    font-family: 'Arial';
+    font-weight: 500;
+}
+
+.header-section .header-section-text{
+    margin: 0;
+}
+
+.header-section .header-section-button-world-map{
+    margin: 1em 0;
+    border-radius: 1em;
+    width: 60%;
+}
+
+
+.header-section .header-section-social-icons{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+ /* main e seus textos */
+
+ .body .main{
+    margin-top: 0;
+ }
+
+.row > .main-princi-images{
+    margin-top: 0;
+    grid-row: 1 / 2;
+    padding: 4.6875em;
+    grid-column: 1 /-1;
+}
+
+.main-princi-images img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.main .main-princi-images hr{
+    margin: 1em 0;
+    background-image: linear-gradient(to right, var(--terciary-color), var(--primary-color), var(--terciary-color), var(--primary-color), var(--terciary-color));
+    border: none;
+    height: 1px;
+}
+
+.main .main-princi-images hr::after{
+    font-size: 1.2em;
+    content: '⊱  ⊰';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    padding: 1rem;
+    background-color: transparent;
+}    
+
+.row > .main-princi-about{
+    grid-column: 1 / -1;
+    margin: 2em 0;
+    text-align: center;
+    display: block;
+    
+}
+.main-princi-about-text{
+    display: block;
+    padding: 2.5em 15%;
+}
+
+.main-princi-about-text .paragraph-text{
+    display: block;
+}
+
+.main-princi-about-text:nth-child(odd){
+    background-color: var(--opacity-secondary-color);
+    width: 100%;
+}
+
+
+/* .main .subcontainer-icon-about{
+    
+} */
+/* .icon-main-princi{
+    width: 100%;
+    
+} */
+
+.subcontainer-icon-about img{
+    width: 100%;
+}
+
+.back-diferent{
+    background-color: var(--opacity-secondary-color);
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE*/
+
+
+@media screen and (max-width: 45em) {
+
+    .header-section{
+        height: 100%;
+    }
+    /* header section  */
+
+    .row > .header-section-first{
+        
+        grid-column: 1 /-1;
+    }
+
+    .header-section-second, .header-section-second .formas{
+        display: none;
+    }
+
+    
+    /* MAIN */
+
+    .row > .main-princi-images{
+       
+        padding: calc(4.6875em /2);
+    }
+
+    .subcontainer-icon-about{
+        grid-template-columns: repeat(2, 1fr);
+        display: grid; 
+        grid-gap: .5em;
+        margin: 0 auto;
+    } 
+
+    .subcontainer-icon-about .icon-main-princi img{
+        width: 75%;
+    }
+
+    .main-princi-about-text{
+        display: block;
+        padding: 2.5em 5%;
+    }
+
+
+    
+
+}
+
+
+@media screen and (min-width: 45em) {
+    
+    
+
+    /* header section  */
+
+    .header{
+        height: calc(100vh - 6.5625em);
+    }
+
+    .row > .header-section-first{
+        
+        grid-column: 1 / 6 ;
+    }
+
+
+    .header-section-second .formas{
+        width: 30%;
+        display: block;
+    }
+
+    .header-section-second .paralelograma-3{
+        display: none;
+    }
+
+    /* MAIN */
+
+    .subcontainer-icon-about{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: .5em;
+    }
+
+    .subcontainer-icon-about .icon-main-princi{
+        width: 50%;
+    }
+
+    .subcontainer-icon-about .icon-main-princi img{
+        width: 50%;
+    }
+    
+    .main-princi-about-text{
+        display: block;
+        padding: 2.5em 10%;
+    }
+    
+
+}
+
+@media screen and (min-width: 90.875em) {
+
+    /* header  */
+
+    .header-section-second .paralelograma-3{
+        display: block;
+    }
+
+    .header-section-second .formas{
+        width: 20%;
+        display: block;
+    }
+
+
+    .subcontainer-icon-about .icon-main-princi img{
+        width: 50%;
+    }
+
+    .main-princi-about-text{
+        display: block;
+        padding: 2.5em 15%;
+    }
+
+} 
+
